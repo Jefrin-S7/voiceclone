@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
     })
 
     // Return audio as MP3 stream
-    return new NextResponse(audioBuffer, {
+    return new NextResponse(new Uint8Array(audioBuffer), {
       status: 200,
       headers: {
         'Content-Type': 'audio/mpeg',
