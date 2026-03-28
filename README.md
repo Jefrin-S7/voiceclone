@@ -6,7 +6,7 @@
 
 ## ✨ Live Demo
 
-**[voxclone-ai.vercel.app](https://voxclone-ai.vercel.app)**
+**[voxclone-ai.vercel.app](https://voxclone-86jk800gi-jefrin-s7s-projects.vercel.app/)**
 
 ---
 
@@ -112,20 +112,6 @@ NEXT_PUBLIC_FIREBASE_APP_ID=1:123:web:abc
 FIREBASE_ADMIN_PROJECT_ID=your-project-id
 FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-xxx@your-project.iam.gserviceaccount.com
 FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
-```
-
-## ☁️ Deploy to Vercel
-
-### One-Click Deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/voiceclone-ai)
-
-### Manual Deploy
-
-```bash
-npm install -g vercel
-vercel login
-vercel --prod
 ```
 
 **Add environment variables in Vercel Dashboard:**
