@@ -53,7 +53,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         {/* Footer links */}
         <div className="px-3 py-4 border-t border-white/5 space-y-1">
           <a
-            href="https://github.com"
+            href="https://github.com/Jefrin-S7/voiceclone"
             target="_blank"
             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-silver hover:text-platinum hover:bg-surface-2 transition-all"
           >

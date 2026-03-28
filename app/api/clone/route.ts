@@ -3,13 +3,12 @@ import { cloneVoice } from '@/lib/elevenlabs'
 
 export async function POST(req: NextRequest) {
   try {
-    // Parse multipart form data
+
     const formData = await req.formData()
     const audio = formData.get('audio') as File | null
     const name = formData.get('name') as string | null
     const description = formData.get('description') as string | null
 
-    // Validate inputs
     if (!audio || audio.size === 0) {
       return NextResponse.json(
         { error: 'No audio file provided' },
@@ -35,7 +34,6 @@ export async function POST(req: NextRequest) {
     // Convert File to Blob for the API
     const audioBlob = new Blob([await audio.arrayBuffer()], { type: audio.type })
 
-    // Call ElevenLabs voice cloning API
     const result = await cloneVoice({
       name: name.trim(),
       description: description?.trim() || `Cloned voice: ${name}`,
@@ -51,7 +49,6 @@ export async function POST(req: NextRequest) {
   } catch (error: any) {
     console.error('[API /clone] Error:', error)
 
-    // Handle ElevenLabs-specific errors
     if (error.message?.includes('quota')) {
       return NextResponse.json(
         { error: 'Monthly voice clone limit reached. Upgrade your ElevenLabs plan.' },

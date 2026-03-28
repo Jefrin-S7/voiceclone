@@ -44,7 +44,7 @@ export default function LandingPage() {
           <a href="#features" className="hover:text-platinum transition-colors">Features</a>
           <a href="#how-it-works" className="hover:text-platinum transition-colors">How It Works</a>
           <a href="#pricing" className="hover:text-platinum transition-colors">Pricing</a>
-          <a href="https://github.com" target="_blank" className="hover:text-platinum transition-colors flex items-center gap-1.5">
+          <a href="https://github.com/Jefrin-S7/voiceclone" target="_blank" className="hover:text-platinum transition-colors flex items-center gap-1.5">
             <Github className="w-4 h-4" /> GitHub
           </a>
         </div>
@@ -372,7 +372,7 @@ export default function LandingPage() {
             Built with Next.js · Firebase · ElevenLabs · Deployed on Vercel
           </div>
           <a
-            href="https://github.com"
+            href="https://github.com/Jefrin-S7/voiceclone"
             target="_blank"
             className="flex items-center gap-1.5 hover:text-platinum transition-colors"
           >

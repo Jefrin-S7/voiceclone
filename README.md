@@ -96,49 +96,6 @@ voiceclone-ai/
 
 ---
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+
-- A free [ElevenLabs](https://elevenlabs.io) account
-- A free [Firebase](https://console.firebase.google.com) project
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/voiceclone-ai.git
-cd voiceclone-ai
-npm install
-```
-
-### 2. Get Your API Keys
-
-#### ElevenLabs (Voice AI)
-1. Sign up at [elevenlabs.io](https://elevenlabs.io) — no credit card needed
-2. Go to **Profile → API Keys**
-3. Copy your API key
-4. Free tier includes: **10,000 chars/month** + **3 voice clones**
-
-#### Firebase
-1. Go to [console.firebase.google.com](https://console.firebase.google.com)
-2. Create a new project
-3. Enable these services:
-   - **Firestore Database** (Start in test mode, then apply rules)
-   - **Storage** (default bucket)
-   - **Authentication** (Email/Password or Google)
-4. Go to **Project Settings → General → Your apps → Web App**
-5. Copy the Firebase config object
-6. Go to **Project Settings → Service Accounts → Generate new private key**
-7. Save the JSON file (you'll need fields from it)
-
-### 3. Set Up Environment Variables
-
-```bash
-cp .env.local.example .env.local
-```
-
-Edit `.env.local` and fill in all values:
-
 ```env
 # ElevenLabs
 ELEVENLABS_API_KEY=xi_...your_key...
@@ -156,25 +113,6 @@ FIREBASE_ADMIN_PROJECT_ID=your-project-id
 FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-xxx@your-project.iam.gserviceaccount.com
 FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
 ```
-
-### 4. Apply Firebase Security Rules
-
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init firestore
-firebase deploy --only firestore:rules,storage
-```
-
-### 5. Run Locally
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
----
 
 ## ☁️ Deploy to Vercel
 
@@ -256,6 +194,9 @@ For the best clone quality:
 - **Delivery**: Natural speech, varied sentences
 - **Format**: WAV or high-bitrate MP3 preferred
 - **Content**: Mix of short and long sentences; avoid repetition
+
+## VOICE CLONE IS NOT WORKING ON CURRENTLY. BECAUSE OF FREE CREADITS
+## TRY TEXT TO SPEECH WITH ALTERNATE VOICES
 
 ---
 

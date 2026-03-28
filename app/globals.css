@@ -26,7 +26,7 @@ body {
 .waveform-bar {
   width: 3px;
   border-radius: 3px;
-  background: #ff4d1c;
+  background: #6e26ff;
   animation: waveform 1.2s ease-in-out infinite;
 }
 
@@ -50,7 +50,7 @@ body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #12121a; }
 ::-webkit-scrollbar-thumb { background: #222232; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #ff4d1c; }
+::-webkit-scrollbar-thumb:hover { background: #9e06fc; }
 
 /* Grain overlay on hero */
 .grain {
